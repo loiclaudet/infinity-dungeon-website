@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Favicon from "react-favicon";
 import styles from "../styles/Home.module.css";
 import logo from "../public/logo-website.png";
 import itchBadge from "../public/itch-badge-color.svg";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             <button className={styles["google-play"]}>
               <a
                 className={styles["play-links"]}
-                href="https://play.google.com/store/apps/details?id=com.infinitydungeon.game&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                href="https://play.google.com/store/apps/details?id=com.infinitydungeon.app"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -49,53 +49,7 @@ const Home: NextPage = () => {
             </button>
           </div>
         </header>
-        <footer className={styles.footer}>
-          <div className={styles.links}>
-            <a className={styles.link} href="#">
-              Credits
-            </a>
-            <a
-              className={styles.link}
-              href="mailto:contact@infinitydungeon.com"
-            >
-              Contact Us
-            </a>
-            <a
-              className={styles.link}
-              href="/privacy-policy.pdf"
-              target="_blank"
-              rel="noopener"
-            >
-              Privacy Policy
-            </a>
-          </div>
-          <div className={styles.social}>
-            <a
-              href="https://twitter.com/InfinityDungeon"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className={styles["social-button"]}>
-                <span>Twitter</span>
-                <span
-                  className={`${styles["social-icon"]} ${styles["social-icon--twitter"]}`}
-                ></span>
-              </button>
-            </a>
-            <a
-              href="https://discord.gg/CBby6Tnbjb"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className={styles["social-button"]}>
-                <span>Discord</span>
-                <span
-                  className={`${styles["social-icon"]} ${styles["social-icon--discord"]}`}
-                ></span>
-              </button>
-            </a>
-          </div>
-        </footer>
+        <Footer page="home" />
       </div>
     </>
   );
