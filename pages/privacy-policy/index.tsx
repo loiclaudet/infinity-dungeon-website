@@ -7,7 +7,10 @@ const Privacy: NextPage = () => {
     <>
       <div className={styles.privacy}>
         <main className={styles.main}>
-          <h1 className={styles.title}>Privacy Policy</h1>
+          <h1 className={styles.title}>
+            Privacy Policy for the game <u>Infinity Dungeon</u>
+          </h1>
+
           <h2
             style={{
               fontSize: "25px",
