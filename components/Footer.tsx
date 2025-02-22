@@ -1,7 +1,7 @@
-import styles from "../styles/Home.module.css";
+import styles from '../styles/Home.module.css'
 
 interface PrivacyProps {
-  page: "privacy" | "home";
+  page: 'privacy' | 'home'
 }
 export default function Footer({ page }: PrivacyProps) {
   return (
@@ -15,39 +15,27 @@ export default function Footer({ page }: PrivacyProps) {
         </a>
         <a
           className={styles.link}
-          href={page === "privacy" ? "/" : "/privacy-policy"}
+          href={page === 'privacy' ? '/' : '/privacy-policy'}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {page === "privacy" ? "Home" : "Privacy Policy"}
+          {page === 'privacy' ? 'Home' : 'Privacy Policy'}
         </a>
       </div>
       <div className={styles.social}>
-        <a
-          href="https://twitter.com/InfinityDungeon"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className={styles["social-button"]}>
-            <span>Twitter</span>
-            <span
-              className={`${styles["social-icon"]} ${styles["social-icon--twitter"]}`}
-            ></span>
+        <a href="https://x.com/InfinityDungeon" target="_blank" rel="noreferrer">
+          <button className={`${styles['social-button']} ${styles['social-button--x']}`}>
+            <span>@infinitydungeon</span>
+            <span className={styles['social-icon-x']}>𝕏</span>
           </button>
         </a>
-        <a
-          href="https://discord.gg/CBby6Tnbjb"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className={styles["social-button"]}>
+        <a href="https://discord.gg/CBby6Tnbjb" target="_blank" rel="noreferrer">
+          <button className={styles['social-button']}>
             <span>Discord</span>
-            <span
-              className={`${styles["social-icon"]} ${styles["social-icon--discord"]}`}
-            ></span>
+            <span className={`${styles['social-icon']} ${styles['social-icon--discord']}`}></span>
           </button>
         </a>
       </div>
     </footer>
-  );
+  )
 }

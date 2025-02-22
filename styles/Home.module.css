@@ -32,7 +32,7 @@
 }
 
 .privacy {
-  margin:auto;
+  margin: auto;
   width: 100%;
   max-width: 1200px;
   padding: 2rem;
@@ -151,6 +151,13 @@
   background-color: transparent;
 }
 
+.social-button--x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .social-icon {
   width: 1.2em;
   height: 1.2em;
@@ -159,9 +166,11 @@
   background-repeat: no-repeat;
 }
 
-.social-icon--twitter {
-  background-image: url(/twitter.png);
+.social-icon-x {
+  font-size: 1.05rem;
+  font-weight: bold;
 }
+
 .social-icon--discord {
   background-image: url(/discord.png);
 }
