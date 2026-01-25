@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             <button className={styles.itch}>
               <a
                 className={styles['play-links']}
-                href="https://dlodz.itch.io/infinity-dungeon"
+                href="https://loiclaudet.itch.io/infinity-dungeon"
                 target="_blank"
                 rel="noreferrer"
               >
