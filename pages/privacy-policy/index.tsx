@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Footer from "../../components/Footer";
+import { Footer } from "../../components/Footer";
 import styles from "../../styles/Home.module.css";
 
 const Privacy: NextPage = () => {

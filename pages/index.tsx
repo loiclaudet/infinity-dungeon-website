@@ -4,7 +4,7 @@ import Favicon from "react-favicon";
 import styles from "../styles/Home.module.css";
 import logo from "../public/logo-website.webp";
 import itchBadge from "../public/itch-badge-color.svg";
-import Footer from "../components/Footer";
+import { Footer } from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -19,37 +19,33 @@ const Home: NextPage = () => {
       />
       <div className={styles.app}>
         <header className={styles.header}>
+          <h1 className="visually-hidden">Infinity Dungeon</h1>
           <div className={styles.logo}>
-            <Image src={logo} alt="logo" unoptimized />
+            <Image
+              src={logo}
+              alt="Infinity Dungeon - Turn-based dungeon crawler"
+              unoptimized
+              priority
+            />
           </div>
-          <div className={styles["play-buttons"]}>
-            <button className={styles.itch}>
-              <a
-                className={styles["play-links"]}
-                href="https://loiclaudet.itch.io/infinity-dungeon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image src={itchBadge} alt="Available on itch.io" unoptimized />
-                {/* <img alt="Available on itch.io" src="itch-badge-color.svg" /> */}
-              </a>
-            </button>
-            {/* <button className={styles["google-play"]}>
-              <a
-                className={styles["play-links"]}
-                href="https://play.google.com/store/apps/details?id=com.infinitydungeon.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  alt="Get it on Google Play"
-                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                />
-              </a>
-            </button> */}
-          </div>
+          <nav className={styles["play-buttons"]} aria-label="Download links">
+            <a
+              className={`${styles.itch} ${styles["play-links"]}`}
+              href="https://loiclaudet.itch.io/infinity-dungeon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src={itchBadge}
+                alt="Get Infinity Dungeon on itch.io"
+                unoptimized
+              />
+            </a>
+          </nav>
         </header>
-        <Footer page="home" />
+        <main>
+          <Footer page="home" />
+        </main>
       </div>
     </>
   );

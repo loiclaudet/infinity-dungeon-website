@@ -1,41 +1,54 @@
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
-interface PrivacyProps {
-  page: 'privacy' | 'home'
-}
-export default function Footer({ page }: PrivacyProps) {
+type FooterProps = {
+  page: "privacy" | "home";
+};
+
+export const Footer = ({ page }: FooterProps) => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.links}>
-        <a className={styles.link} href="#">
-          Credits
-        </a>
-        <a className={styles.link} href="mailto:contact@infinitydungeon.com">
+      <nav className={styles.links} aria-label="Footer navigation">
+        <a
+          className={styles.link}
+          href="mailto:contact@infinitydungeon.com"
+          aria-label="Contact us via email"
+        >
           Contact Us
         </a>
         <a
           className={styles.link}
-          href={page === 'privacy' ? '/' : '/privacy-policy'}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={page === "privacy" ? "/" : "/privacy-policy"}
         >
-          {page === 'privacy' ? 'Home' : 'Privacy Policy'}
+          {page === "privacy" ? "Home" : "Privacy Policy"}
         </a>
-      </div>
-      <div className={styles.social}>
-        <a href="https://x.com/InfinityDungeon" target="_blank" rel="noreferrer">
-          <button className={`${styles['social-button']} ${styles['social-button--x']}`}>
-            <span>@infinitydungeon</span>
-            <span className={styles['social-icon-x']}>𝕏</span>
-          </button>
+      </nav>
+      <div className={styles.social} role="group" aria-label="Social links">
+        <a
+          className={`${styles["social-button"]} ${styles["social-button--x"]}`}
+          href="https://x.com/InfinityDungeon"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Follow Infinity Dungeon on X (Twitter)"
+        >
+          <span>@infinitydungeon</span>
+          <span className={styles["social-icon-x"]} aria-hidden="true">
+            𝕏
+          </span>
         </a>
-        <a href="https://discord.gg/CBby6Tnbjb" target="_blank" rel="noreferrer">
-          <button className={styles['social-button']}>
-            <span>Discord</span>
-            <span className={`${styles['social-icon']} ${styles['social-icon--discord']}`}></span>
-          </button>
+        <a
+          className={styles["social-button"]}
+          href="https://discord.gg/CBby6Tnbjb"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Join the Infinity Dungeon Discord server"
+        >
+          <span>Discord</span>
+          <span
+            className={`${styles["social-icon"]} ${styles["social-icon--discord"]}`}
+            aria-hidden="true"
+          />
         </a>
       </div>
     </footer>
-  )
-}
+  );
+};
