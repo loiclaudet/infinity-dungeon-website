@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Favicon from "react-favicon";
 import styles from "../styles/Home.module.css";
-import logo from "../public/logo-website.webp";
 import itchBadge from "../public/itch-badge-color.svg";
 import { Footer } from "../components/Footer";
 
@@ -18,31 +17,35 @@ const Home: NextPage = () => {
         animationDelay={350}
       />
       <div className={styles.app}>
-        <header className={styles.header}>
-          <h1 className="visually-hidden">Infinity Dungeon</h1>
-          <div className={styles.logo}>
-            <Image
-              src={logo}
-              alt="Infinity Dungeon - Turn-based dungeon crawler"
-              unoptimized
-              priority
-            />
-          </div>
-          <nav className={styles["play-buttons"]} aria-label="Download links">
-            <a
-              className={`${styles.itch} ${styles["play-links"]}`}
-              href="https://loiclaudet.itch.io/infinity-dungeon"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                src={itchBadge}
-                alt="Get Infinity Dungeon on itch.io"
-                unoptimized
+        <main>
+          <header className={styles.header}>
+            <h1 className="visually-hidden">Infinity Dungeon</h1>
+            <div className={styles.logo}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo-website.webp"
+                alt="Infinity Dungeon - Turn-based dungeon crawler"
+                width={575}
+                height={271}
+                fetchPriority="high"
               />
-            </a>
-          </nav>
-        </header>
+            </div>
+            <nav className={styles["play-buttons"]} aria-label="Download links">
+              <a
+                className={`${styles.itch} ${styles["play-links"]}`}
+                href="https://loiclaudet.itch.io/infinity-dungeon"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  src={itchBadge}
+                  alt="Get Infinity Dungeon on itch.io"
+                  unoptimized
+                />
+              </a>
+            </nav>
+          </header>
+        </main>
         <Footer page="home" />
       </div>
     </>
