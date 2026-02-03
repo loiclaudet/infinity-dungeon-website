@@ -4,21 +4,48 @@ import Favicon from "react-favicon";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <meta name="description" content="Infinity Dungeon" />
+          <meta charSet="utf-8" />
+          <meta
+            name="description"
+            content="Infinity Dungeon - A dynamic turn-based dungeon crawler. Play as your favorite hero and discover the deepest and most unexplored caves."
+          />
+          <meta name="theme-color" content="#1a1a2e" />
+          <link rel="canonical" href="https://www.infinitydungeon.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Galindo&display=swap"
             rel="stylesheet"
           />
           <meta property="og:title" content="Infinity Dungeon" />
           <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Infinity Dungeon" />
           <meta
             property="og:description"
-            content="In this dynamic turn-based dungeon crawler, play as your favorite hero and discover the deepest and most unexplored caves."
+            content="A dynamic turn-based dungeon crawler. Play as your favorite hero and discover the deepest and most unexplored caves."
           />
-          <meta property="og:image" content="/logo-website.webp" />
-          <meta property="og:url" content="https://infinitydungeon.com" />
+          <meta
+            property="og:image"
+            content="https://www.infinitydungeon.com/logo-website.webp"
+          />
+          <meta property="og:url" content="https://www.infinitydungeon.com" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@InfinityDungeon" />
+          <meta name="twitter:title" content="Infinity Dungeon" />
+          <meta
+            name="twitter:description"
+            content="A dynamic turn-based dungeon crawler. Play as your favorite hero and discover the deepest and most unexplored caves."
+          />
+          <meta
+            name="twitter:image"
+            content="https://www.infinitydungeon.com/logo-website.webp"
+          />
         </Head>
         <body>
           <Main />
