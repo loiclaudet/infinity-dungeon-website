@@ -17,7 +17,7 @@ class MyDocument extends Document {
             property="og:description"
             content="In this dynamic turn-based dungeon crawler, play as your favorite hero and discover the deepest and most unexplored caves."
           />
-          <meta property="og:image" content="/logo-website.png" />
+          <meta property="og:image" content="/logo-website.webp" />
           <meta property="og:url" content="https://infinitydungeon.com" />
         </Head>
         <body>

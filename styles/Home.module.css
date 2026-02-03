@@ -26,7 +26,7 @@
   align-items: center;
   width: 100%;
   padding: 3rem 0;
-  background-image: url(/header-bg.jpg);
+  background-image: url(/header-bg.webp);
   background-size: cover;
   background-position: center center;
 }
@@ -54,7 +54,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-image: url(/footer-pattern.jpg);
+  background-image: url(/footer-pattern.webp);
   background-size: 20% 100%;
   background-repeat: repeat-x;
   color: white;
@@ -62,7 +62,7 @@
 
 .title {
   margin-top: 18px;
-  font-family: 'Galindo', cursive;
+  font-family: "Galindo", cursive;
   color: black;
   margin-bottom: 0.3rem;
   font-size: 2em;
@@ -112,7 +112,7 @@
 }
 
 .link {
-  font-family: 'Galindo', cursive;
+  font-family: "Galindo", cursive;
   text-decoration: underline;
   color: white;
   margin-right: 2rem;
@@ -140,11 +140,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/button.png);
+  background-image: url(/button.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 0.4em 1em;
-  font-family: 'Galindo', cursive;
+  font-family: "Galindo", cursive;
   color: white;
   cursor: pointer;
   border: 0;
@@ -172,7 +172,7 @@
 }
 
 .social-icon--discord {
-  background-image: url(/discord.png);
+  background-image: url(/discord.webp);
 }
 
 @media (orientation: portrait) {
@@ -212,7 +212,7 @@
   }
 
   .link {
-    font-family: 'Galindo', cursive;
+    font-family: "Galindo", cursive;
     text-decoration: underline;
     color: white;
     margin-bottom: 0.3rem;
