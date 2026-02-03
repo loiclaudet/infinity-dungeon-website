@@ -18,6 +18,12 @@
   height: 100%;
 }
 
+.main {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+
 .header {
   flex-grow: 1;
   display: flex;
