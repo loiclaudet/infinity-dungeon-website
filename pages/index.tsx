@@ -21,13 +21,12 @@ const Home: NextPage = () => {
           <header className={styles.header}>
             <h1 className="visually-hidden">Infinity Dungeon</h1>
             <div className={styles.logo}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/logo-website.webp"
                 alt="Infinity Dungeon - Turn-based dungeon crawler"
                 width={575}
                 height={271}
-                fetchPriority="high"
+                priority
               />
             </div>
             <nav className={styles["play-buttons"]} aria-label="Download links">
