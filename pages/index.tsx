@@ -17,34 +17,32 @@ const Home: NextPage = () => {
         animationDelay={350}
       />
       <div className={styles.app}>
-        <main>
-          <header className={styles.header}>
-            <h1 className="visually-hidden">Infinity Dungeon</h1>
-            <div className={styles.logo}>
+        <header className={styles.header} role="main">
+          <h1 className="visually-hidden">Infinity Dungeon</h1>
+          <div className={styles.logo}>
+            <Image
+              src="/logo-website.webp"
+              alt="Infinity Dungeon - Turn-based dungeon crawler"
+              width={575}
+              height={271}
+              priority
+            />
+          </div>
+          <nav className={styles["play-buttons"]} aria-label="Download links">
+            <a
+              className={`${styles.itch} ${styles["play-links"]}`}
+              href="https://loiclaudet.itch.io/infinity-dungeon"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
-                src="/logo-website.webp"
-                alt="Infinity Dungeon - Turn-based dungeon crawler"
-                width={575}
-                height={271}
-                priority
+                src={itchBadge}
+                alt="Get Infinity Dungeon on itch.io"
+                unoptimized
               />
-            </div>
-            <nav className={styles["play-buttons"]} aria-label="Download links">
-              <a
-                className={`${styles.itch} ${styles["play-links"]}`}
-                href="https://loiclaudet.itch.io/infinity-dungeon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  src={itchBadge}
-                  alt="Get Infinity Dungeon on itch.io"
-                  unoptimized
-                />
-              </a>
-            </nav>
-          </header>
-        </main>
+            </a>
+          </nav>
+        </header>
         <Footer page="home" />
       </div>
     </>
