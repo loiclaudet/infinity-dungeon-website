@@ -43,9 +43,7 @@ const Home: NextPage = () => {
             </a>
           </nav>
         </header>
-        <main>
-          <Footer page="home" />
-        </main>
+        <Footer page="home" />
       </div>
     </>
   );
