@@ -13,6 +13,12 @@ class MyDocument extends Document {
           />
           <meta name="theme-color" content="#1a1a2e" />
           <link rel="canonical" href="https://www.infinitydungeon.com" />
+          <link
+            rel="preload"
+            href="/logo-website.webp"
+            as="image"
+            type="image/webp"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
